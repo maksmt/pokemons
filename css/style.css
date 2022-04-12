@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(80, 74, 74);
+}
+.pokemons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.4em;
+}
+.pokemon-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    background-color: #fff;
+    width: 30%;
+    border-radius: 40px;
+    padding: 10px;
+    box-shadow: 2px -1px 25px 4px rgba(34, 60, 80, 0.2) inset;
+}
+
+.name__pokemon {
+}
+.photo__pokemon {
+}
+.abilities__pokemon {
+}
+.abilities__pokemon-title {
+}
+.title {
+}
+.stats__pokemon {
+}
+.forms__pokemon {
+}
