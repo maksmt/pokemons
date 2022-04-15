@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <?php
+    ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL);
+    ?>
     <div class="pokemons">
 
         <div class="pokemon-item">
@@ -53,8 +56,8 @@
             <div class="forms__pokemon">
                 <?php
                     echo "Поточна форма: " . $pokemon->forms[0]->name . "<br>";
-                    if($pokemon->forms[1]->name){
-                        echo " еволюціонує в " . $pokemon->forms[1]->name;
+                    if(!(empty($pokemon->forms[1]->name))){
+                        echo " Еволюціонує в " . $pokemon->forms[1]->name;
                     }else{
                         echo "Це остання форма еволюції покемона";
                     }
@@ -100,8 +103,9 @@
             <div class="forms__pokemon">
                 <?php
                     echo "Поточна форма: " . $pokemon->forms[0]->name . "<br>";
-                    if($pokemon->forms[1]->name){
-                        echo " еволюціонує в " . $pokemon->forms[1]->name;
+                    
+                    if(!(empty($pokemon->forms[1]->name))){
+                        echo " Еволюціонує в " . $pokemon->forms[1]->name;
                     }else{
                         echo "Це остання форма еволюції покемона";
                     }
@@ -148,7 +152,7 @@
             <div class="forms__pokemon">
                 <?php
                     echo "Поточна форма: " . $pokemon->forms[0]->name . "<br>";
-                    if($pokemon->forms[1]->name){
+                    if(!(empty($pokemon->forms[1]->name))){
                         echo " Еволюціонує в " . $pokemon->forms[1]->name;
                     }else{
                         echo "Це остання форма еволюції покемона";
